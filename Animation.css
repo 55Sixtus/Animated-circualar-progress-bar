@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: radial-gradient(#444,#222);
+}
+.card{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.card .rating {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #f00;
+
+}
+.card .rating .block {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #000;
+    left: 50%;
+    opacity: 0;
+    transform-origin: 50% 100px;
+    animation: animate 0.1s linear forwards;
+    
+}
+@keyframes animate {
+    
+}
+.card .rating h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    align-items: center;
+    line-height: 1.5em;
+}
+.card .rating h2 span {
+    font-size: 2.5em;
+    font-weight: 700;
+}
